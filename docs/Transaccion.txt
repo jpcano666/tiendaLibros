@@ -1,0 +1,13 @@
+/**
+     * Retorna la siguiente transacción de la lista.
+     * @return Siguiente transacción.
+     */
+    public Transaccion darSiguiente()
+        
+
+    /**
+     * Cambia la siguiente transacción de la lista.
+     * @param pTransaccion Transacción a asignar como siguiente.
+     */
+    public void cambiarSiguiente(Transaccion pTransaccion)
+    

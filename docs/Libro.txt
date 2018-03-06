@@ -1,0 +1,81 @@
+/**
+     * Crea un libro con su título, isbn, autor y precioVenta. <br>
+     * <b>post: </b>El título, el isbn, el precio de venta, el precio de compra, la categoría y la ruta de la imagen se inicializaron con los valores dados. <br>
+     * La cantidad actual se inicializó en cero y la primera transacción se inicializó en null. El libro anterior y siguiente se inicializaron en null.
+     * @param pTitulo Título del libro. pTitulo != null && pTitulo != "".
+     * @param pIsbn Código ISBN del libro. pIsbn != null && pIsbn != "".
+     * @param pPrecioVenta precioVenta del libro. pPrecioVenta > 0.
+     * @param pPrecioCompra precioVenta del libro. pPrecioCompra > 0.
+     * @param pCategoria Categoría a la que pertenece el libro. pCategoria != null && pCategoria != "". pCategoria pertenece a CATEGORIAS.
+     * @param pRutaImagen Ruta de la imagen del libro. pRutaImagen != null && pRutaImagen != "".
+     */
+    public Libro( String pTitulo, String pIsbn, double pPrecioVenta, double pPrecioCompra, String pCategoria, String pRutaImagen )
+
+/**
+     * Retorna la categoría del libro.
+     * @return La categoría del libro.
+     */
+    public String darCategoria( )
+
+/**
+     * Retorna el anterior libro de la lista.
+     * @return Anterior libro.
+     */
+    public Libro darAnterior()
+    
+    
+    /**
+     * Retorna el siguiente libro de la lista.
+     * @return Siguiente libro.
+     */
+    public Libro darSiguiente()
+    
+
+    /**
+     * Retorna la primera transacción del libro.
+     * @return primera transacción del libro.
+     */
+    public Transaccion darPrimeraTransaccion()
+    
+
+    /**
+     * Cambia el anterior libro de la lista.
+     * @param pLibro Libro a asignar como anterior.
+     */
+    public void cambiarAnterior(Libro pLibro)
+    
+    
+    /**
+     * Cambia el siguiente libro de la lista.
+     * @param pLibro Libro a asignar como siguiente.
+     */
+    public void cambiarSiguiente(Libro pLibro)
+    
+/**
+     * Agrega una transacción al final de la lista de transacciones.
+     * @param pTransaccion transaccion a agregar.
+     */
+    private void agregarTransaccion( Transaccion pTransaccion )
+
+/**
+     * Compara dos libros por su título. Si los títulos son iguales los compara por isbn.
+     * @param pLibro Libro con el cual se desea comparar. pLibro != null.
+     * @return 0 si los dos libros son iguales, 1 si el libro actual es mayor, -1 si es menor.
+     */
+    public int compararPorTitulo( Libro pLibro )
+    {
+        int comparacion = titulo.compareTo( pLibro.darTitulo( ) );
+        if( comparacion == 0 )
+        {
+            comparacion = isbn.compareTo( pLibro.darIsbn( ) );
+        }
+        else if( comparacion > 0 )
+        {
+            comparacion = 1;
+        }
+        else
+        {
+            comparacion = -1;
+        }
+        return comparacion;
+    }

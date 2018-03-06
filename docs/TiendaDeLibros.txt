@@ -1,0 +1,25 @@
+/**
+     * Crea una nueva tienda de libros. <br>
+     * <b>post:</b> El primer libro del catálogo fue inicializado en null. <br>
+     * La caja fue inicializada en 1000000.
+     */
+    public TiendaDeLibros( )
+
+/**
+     * Retorna el primer libro de la lista.
+     * @return El primer libro de la lista.
+     */
+    public Libro darPrimerLibro( )
+
+/**
+     * Registra un libro en la tienda de libros. <br>
+     * <b>post: </b> El libro fue creado y agregado al catálogo alfabéticamente.
+     * @param pTitulo El título del libro que se quiere agregar. pTitulo != null && pTitulo != "".
+     * @param pIsbn El código ISBN del libro que se quiere agregar. pIsbn != null && pIsbn != "".
+     * @param pPrecioVenta El precio de venta del libro que se quiere agregar. pPrecioVenta > 0.
+     * @param pPrecioCompra El precio de compra del libro que se quiere agregar. pPrecioCompra > 0.
+     * @param pCategoria Categoría a la que pertenece el libro. pCategoria != null && pCategoria != "". pCategoria pertenece a CATEGORIAS.
+     * @param pRutaImagen La ruta de la imagen del libro. pRutaImagen != null && pRutaImagen != "".
+     * @return El nuevo libro registrado en caso de que si se haya podido realizar la operación, null en caso de que el libro ya exista.
+     */
+    public Libro registrarLibro( String pTitulo, String pIsbn, double pPrecioVenta, double pPrecioCompra, String pCategoria, String pRutaImagen )
